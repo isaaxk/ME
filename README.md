@@ -64,3 +64,49 @@ I focus on problems where standard off-the-shelf tools fall short:
 ---
 
 ### 🛠️ Tech Stack & Toolchain
+
+
+
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,sklearn,fastapi,go,ts,react,nextjs,nodejs,postgres,supabase,redis,sqlite,kafka,docker,linux,git,prometheus,grafana&theme=dark" height="38"/>
+</div>
+
+---
+
+### 🚀 Selected Projects
+
+#### 🚕 [Dynamic Price Optimization — Deep RL for Ride-Hailing](https://github.com/isaaxk/ME)
+End-to-end continuous surge pricing system benchmarking **TD3, SAC, and PPO** across 242 NYC zones. Features weather-aware observation spaces (+\$71K profit lift), an ultra-low latency **Go + WebSocket** fare streaming engine, and an interactive **React + Mapbox GL** demand heatmap.
+> `Python` `Go` `Kafka` `WebSockets` `TD3` `SAC` `PPO` `React` `Mapbox GL` `Docker`
+
+#### 🤖 [Multilingual AI Agent Platform & WhatsApp Commerce Engine](https://github.com/isaaxk/ME)
+Enterprise microservices system providing automated conversational commerce over WhatsApp. Built to handle real-world **Algerian Darija, Arabic, French, and English** code-switching via a custom RAG/NLP pipeline, stateful tool-calling agents, and real-time webhook synchronization.
+> `Python (FastAPI)` `Next.js` `PostgreSQL` `Redis` `LangChain` `Vector DBs` `Docker` `WhatsApp API`
+
+#### 🪒 [Unified Multi-Vertical Booking & Scheduling Engine](https://github.com/isaaxk/ME)
+Unified scheduling platform abstracting both appointment-based (1-on-1 staff) and pool-based (shared inventory) capacity models on a single engine. Enforces race-condition-free reservations via **PostgreSQL GiST time-range constraints**, self-hosted WhatsApp notifications (Baileys), and automated waitlist recycling.
+> `React 19` `TypeScript` `Supabase` `PostgreSQL` `Edge Functions` `Deno` `Node.js` `Baileys` `TailwindCSS`
+
+#### 🎲 [Server-Authoritative Real-Time Game Engines](https://github.com/isaaxk/ME)
+Suite of multiplayer web games designed with strict zero-trust client architectures. Includes **Domino Table** (continuous 2D collision geometry, generalized double-6 to double-9 rules), **Texas Hold'em Poker** (complete 7-card hand evaluator, side-pot resolution), and **Bottle Race** (sub-second synchronized multi-client starts).
+> `TypeScript` `Node.js` `Socket.io` `WebSockets` `React` `SQLite (WAL)` `TailwindCSS`
+
+---
+
+### 📊 GitHub Activity
+
+<div align="center">
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=isaaxk&theme=tokyonight&hide_border=true&background=0d1117&ring=00D2FF&fire=00D2FF&currStreakNum=ffffff" alt="GitHub Streak" />
+
+</div>
+
+---
+
+### 🤝 Get in Touch
+
+I'm open to challenging opportunities in **AI Engineering, Reinforcement Learning, and Distributed Backend Systems** — especially problems with messy constraints that require custom architectures.
+
+- ✉️ **Email:** [truly.isaak@gmail.com](mailto:truly.isaak@gmail.com)
+- 💼 **LinkedIn:** [linkedin.com/in/ishak-boudaoud-8729ba251](https://www.linkedin.com/in/ishak-boudaoud-8729ba251)
+- 📂 **Portfolio Repository:** [github.com/isaaxk/ME](https://github.com/isaaxk/ME)
