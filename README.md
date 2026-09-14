@@ -100,6 +100,7 @@ Two years, ten-plus shipped projects, one recurring theme: clients come with a b
 
 `React 19` `TypeScript` `Vite` `TailwindCSS` `Supabase (Postgres/Edge Functions/RLS)` `Deno` `Node.js` `Baileys`
 
+
 ---
 
 ### 💡 AutoLed — Bilingual Automotive E-Commerce & Booking Platform
@@ -118,6 +119,7 @@ Two years, ten-plus shipped projects, one recurring theme: clients come with a b
 
 ---
 
+
 ### 🎲 A Note on the Games
 
 Every multiplayer game in this portfolio started the same way: a family or friend gathering, and an off-the-shelf app that didn't fit it. I wanted full control over the experience — the rules, the scale, the difficulty — and something easy enough for beginners to sit down and play immediately.
@@ -126,10 +128,10 @@ Every multiplayer game in this portfolio started the same way: a family or frien
 
 ### 🀱 Domino Table — Physical-Freedom Real-Time Multiplayer Dominoes
 
-> Started from a very specific family problem: a standard double-six domino set only has 28 tiles, which caps a real game at 4 players — and family gatherings are rarely exactly 4 people. So instead of just digitizing the classic game, I generalized it: **double-six through double-nine sets**, so the table scales up to fit however many family members and friends actually showed up. The result became a production-grade multiplayer platform that breaks from rigid digital-domino conventions, letting players freely arrange tiles in 2D space on a felt table exactly like the physical game, with a dynamic scoring engine evaluating open chain ends on every move.
+> Started from a very specific problem: a standard double-six domino set only has 28 tiles, which caps a real game at 4 players — and family gatherings are rarely exactly 4 people. So I generalized it: **double-six, double-seven ... double-nine sets**.
 
 **The hard parts:**
-- **Free-placement geometry, not a fixed grid.** Physical dominoes don't snap to a grid — players slide tiles anywhere on a 2D felt surface, at any angle, from either end of a branching chain. That means every move has to be geometrically validated (does this tile's pip value actually match an open end at this position?) rather than just checked against a linear array like most digital domino games do.
+- **Free-placement geometry, not a fixed grid.** Physical dominoes don't snap to a grid — players put tiles anywhere on a 2D felt surface, at any angle, from either end of a branching chain. That means every move has to be geometrically validated (does this tile's pip value actually match an open end at this position?) rather than just checked against a linear array like most digital domino games do.
 - **Generalized rule engine across five tile sets.** Double-six, seven, eight, and nine sets don't just add more tiles — they change the pip-value range, the total tile count, and the math behind valid matches. The scoring and move-validation logic had to be written generically against tile-set size rather than hardcoded for 28 tiles.
 - **Server-authoritative concurrency.** Every placement, draw, and pass is validated and serialized server-side so two players can't act on the same open end in a race condition — critical once you allow more than 4 simultaneous players.
 - **Zero-leak hand isolation.** Each player's tiles are only ever sent to their own socket — verified with a dedicated security test suite, not just assumed safe because "the client won't render it."
@@ -193,14 +195,6 @@ Every multiplayer game in this portfolio started the same way: a family or frien
 
 ---
 
-### 🛍️ Storefront — Vanilla JS E-Commerce Prototype
-
-> A lightweight e-commerce front-end built without any framework — cart, checkout, and admin logic implemented from first principles.
-
-`JavaScript` `HTML/CSS`
-
----
-
 ### 🕵️ Undercover — Party Game, Reimagined
 
 > Most Undercover apps draw from a small, fixed word pool — play a few rounds with the same group and you start seeing repeats, which kills the fun fast. I rebuilt it with a much larger, customizable word bank and my own game logic, so the same group of family or friends can play round after round without the game running dry.
@@ -211,6 +205,14 @@ Every multiplayer game in this portfolio started the same way: a family or frien
 - **Custom elimination/voting logic.** Turn order, voting, and elimination all had to be built as a real state machine — handling ties, re-votes, and edge cases like everyone voting for themselves — rather than hardcoded for one fixed player count.
 
 `HTML/CSS/JS`
+
+---
+
+### 🛍️ Storefront — Vanilla JS E-Commerce Prototype
+
+> A lightweight e-commerce front-end built without any framework — cart, checkout, and admin logic implemented from first principles.
+
+`JavaScript` `HTML/CSS`
 
 ---
 
