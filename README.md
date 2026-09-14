@@ -126,11 +126,11 @@ Suite of competitive multiplayer web games designed with strict zero-trust clien
   `Node.js` `WebSockets` `JavaScript` &nbsp;·&nbsp; 🔗 **[Live Game →](https://ishak-s-puzzles.onrender.com)** · **[Repository →](https://github.com/isaaxk/bottles-n-puzzles)**
 - 🕵️ **[undercover-1.7](https://github.com/isaaxk/undercover-1.7)** — Re-engineered secret-role party game with hidden-role state machines, non-repetitive categorized word banks, and custom voting/elimination logic.  
   `HTML/CSS` `JavaScript` &nbsp;·&nbsp; 🔗 **[Live Game →](https://isaaxk.github.io/ishak_games/)** · **[Repository →](https://github.com/isaaxk/undercover-1.7)**
-
+---
 ### 🚕 [Dynamic Price Optimization — Deep RL for Ride-Hailing](https://github.com/isaaxk/ME)
 End-to-end continuous surge pricing system benchmarking **TD3, SAC, and PPO** across 242 NYC zones. Features weather-aware observation spaces (+\$71K profit lift), an ultra-low latency **Go + WebSocket** fare streaming engine, and an interactive **React + Mapbox GL** demand heatmap.
 > `Python` `Go` `Kafka` `WebSockets` `TD3` `SAC` `PPO` `React` `Mapbox GL` `Docker`
-
+---
 ### 🛍️ [ShopDZ — Algerian E-Commerce Platform](https://github.com/isaaxk/bigg-market)
 
 > Lightweight e-commerce platform built from first principles with zero framework overhead — tailored for the Algerian market with nationwide cash-on-delivery across 58 wilayas.
@@ -139,7 +139,7 @@ End-to-end continuous surge pricing system benchmarking **TD3, SAC, and PPO** ac
 
 `JavaScript` `HTML5` `CSS3` `Netlify` &nbsp;·&nbsp; 🔗 **[Live Demo →](https://ishaak-shop-dz.netlify.app/)** · **[Repository →](https://github.com/isaaxk/bigg-market)**
 
-
+---
 
 ## 🧬 Technical Depth
 
