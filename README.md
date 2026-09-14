@@ -1,6 +1,6 @@
 <div align="center">
 
-# 👋 Boudaoud Ishak
+# 👋 Boudaoud ISHAK
 
 #### *AI & Software Engineer · Data Scientist* ####
 
