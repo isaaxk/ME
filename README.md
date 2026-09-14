@@ -93,14 +93,6 @@ Suite of multiplayer web games designed with strict zero-trust client architectu
 
 ---
 
-<div align="center">
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=isaaxk&theme=tokyonight&hide_border=true&background=0d1117&ring=00D2FF&fire=00D2FF&currStreakNum=ffffff" alt="GitHub Streak" />
-
-</div>
-
----
-
 ### 🤝 Get in Touch
 
 I'm open to challenging opportunities in **AI Engineering, Reinforcement Learning, and Distributed Backend Systems** — especially problems with messy constraints that require custom architectures.
