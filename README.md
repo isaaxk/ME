@@ -67,7 +67,7 @@ Two years, ten-plus shipped projects, one recurring theme: clients come with a b
 `Python` `FastAPI` `LangChain` `RAG` `Vector DBs` `React` `Docker`
 
 ---
-
+---
 
 
 ## 🛠️ Other Selected Projects
