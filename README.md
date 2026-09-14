@@ -143,9 +143,13 @@ Suite of competitive multiplayer web games designed with strict zero-trust clien
 End-to-end continuous surge pricing system benchmarking **TD3, SAC, and PPO** across 242 NYC zones. Features weather-aware observation spaces (+\$71K profit lift), an ultra-low latency **Go + WebSocket** fare streaming engine, and an interactive **React + Mapbox GL** demand heatmap.
 > `Python` `Go` `Kafka` `WebSockets` `TD3` `SAC` `PPO` `React` `Mapbox GL` `Docker`
 
-### 🛍️ [Big Market (El-Bazar) — Modular E-Commerce Platform](https://github.com/isaaxk/Big-market-frnt)
-Framework-less e-commerce platform built from first principles with modular vanilla JavaScript. Features dynamic catalog rendering, persistent local cart state, multi-step checkout/payment handling, and a complete administrative product-management dashboard.
-> `JavaScript (ES Modules)` `HTML5` `CSS3` `Vite`
+### 🛍️ [ShopDZ — Algerian E-Commerce Platform](https://github.com/isaaxk/bigg-market)
+
+> Lightweight e-commerce platform built from first principles with zero framework overhead — tailored for the Algerian market with nationwide cash-on-delivery across 58 wilayas.
+ 🛒  Multi-category catalog browsing (Fashion, Tech, Home, Sports, Toys ...) with persistent cart state 
+ ⚡  Pure Vanilla JS architecture 
+
+`JavaScript` `HTML5` `CSS3` `Netlify` &nbsp;·&nbsp; 🔗 **[Live Demo →](https://ishaak-shop-dz.netlify.app/)** · **[Repository →](https://github.com/isaaxk/bigg-market)**
 
 
 
