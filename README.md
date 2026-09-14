@@ -121,13 +121,11 @@ Suite of competitive multiplayer web games designed with strict zero-trust clien
   `TypeScript` `React 19` `Node.js` `Socket.io` `SQLite` `TailwindCSS`
 
 - ♠️ **[Royal-Flush](https://github.com/isaaxk/Royal-Flush)** — Fully server-authoritative Texas Hold'em poker engine featuring a full 7-card hand evaluator for all 10 rankings (handling wheel straight & kicker edge cases), combinatorial side-pot resolution for uneven all-ins, and session-based mid-hand reconnection.  
-  `Node.js` `Express` `Socket.io` `JavaScript`
-
+  `Node.js` `Express` `Socket.io` `JavaScript` &nbsp;·&nbsp; 🔗 **[Live Game →](https://isaak-poker.onrender.com/)** · **[Repository →](https://github.com/isaaxk/Royal-Flush)**
 - 🍾 **[bottles-n-puzzles](https://github.com/isaaxk/bottles-n-puzzles)** — Synchronized real-time multiplayer party game with sub-second synchronized room starts across varying client network jitter, live drift-free progress streaming, and deterministic tiebreak ranking engines.  
-  `Node.js` `WebSockets` `JavaScript`
-
+  `Node.js` `WebSockets` `JavaScript` &nbsp;·&nbsp; 🔗 **[Live Game →](https://ishak-s-puzzles.onrender.com)** · **[Repository →](https://github.com/isaaxk/bottles-n-puzzles)**
 - 🕵️ **[undercover-1.7](https://github.com/isaaxk/undercover-1.7)** — Re-engineered secret-role party game with hidden-role state machines, non-repetitive categorized word banks, and custom voting/elimination logic.  
-  `HTML/CSS` `JavaScript`
+  `HTML/CSS` `JavaScript` &nbsp;·&nbsp; 🔗 **[Live Game →](https://isaaxk.github.io/ishak_games/)** · **[Repository →](https://github.com/isaaxk/undercover-1.7)**
 
 ### 🚕 [Dynamic Price Optimization — Deep RL for Ride-Hailing](https://github.com/isaaxk/ME)
 End-to-end continuous surge pricing system benchmarking **TD3, SAC, and PPO** across 242 NYC zones. Features weather-aware observation spaces (+\$71K profit lift), an ultra-low latency **Go + WebSocket** fare streaming engine, and an interactive **React + Mapbox GL** demand heatmap.
