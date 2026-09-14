@@ -4,7 +4,7 @@
 
 ### AI & Software Engineer · Data Scientist
 
-*Turning research papers into products that run at 2am without anyone watching them*
+*Open to interesting problems — especially the ones that don't fit in a textbook.*
 
 📍 Blida, Algeria · ✉️ truly.isaak@gmail.com · ☎️ +213 552 738 007
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/ishak-boudaoud-8729ba251)
@@ -128,9 +128,9 @@ Every multiplayer game in this portfolio started the same way: a family or frien
 
 ### 🀱 Domino Table — Physical-Freedom Real-Time Multiplayer Dominoes
 
-> Started from a very specific problem: a standard double-six domino set only has 28 tiles, which caps a real game at 4 players — and family gatherings are rarely exactly 4 people. So I generalized it: **double-six, double-seven ... double-nine sets**.
+> Started from a very specific problem: a standard double-six domino set only has 28 tiles, which caps a real game at 4 players — and family gatherings are rarely exactly 4 people. So I generalized it: **double-six, double-seven ... double-nine sets** and added many features and customizations.
 
-**The hard parts:**
+**The complex parts:**
 - **Free-placement geometry, not a fixed grid.** Physical dominoes don't snap to a grid — players put tiles anywhere on a 2D felt surface, at any angle, from either end of a branching chain. That means every move has to be geometrically validated (does this tile's pip value actually match an open end at this position?) rather than just checked against a linear array like most digital domino games do.
 - **Generalized rule engine across five tile sets.** Double-six, seven, eight, and nine sets don't just add more tiles — they change the pip-value range, the total tile count, and the math behind valid matches. The scoring and move-validation logic had to be written generically against tile-set size rather than hardcoded for 28 tiles.
 - **Server-authoritative concurrency.** Every placement, draw, and pass is validated and serialized server-side so two players can't act on the same open end in a race condition — critical once you allow more than 4 simultaneous players.
@@ -154,9 +154,9 @@ Every multiplayer game in this portfolio started the same way: a family or frien
 
 ### ♠️ Royal Hold'em — Real-Time Multiplayer Texas Hold'em Poker
 
-> Built for the same reason as the rest: I wanted poker night with full control over the experience — no app-store restrictions, no confusing interfaces that scare off beginners, just a clean table my friends could actually sit down and play at. Underneath that simple goal is a fully server-authoritative poker engine built from scratch.
+> Built for the same reason as the rest: I wanted poker night with full control over the experience. Underneath that simple goal is a fully server-authoritative poker engine.
 
-**The hard parts:**
+**The complex parts:**
 - **7-card hand evaluation across all 10 rankings.** With 2 hole cards + 5 community cards, the evaluator has to find the *best possible* 5-card hand out of 21 combinations, correctly handling notorious edge cases: the Ace-5 "wheel" straight (A-2-3-4-5, where the Ace counts low), and tie-breaking by kicker cards when two players hold the same hand category.
 - **Side-pot resolution for uneven all-ins.** When players go all-in with different stack sizes, the pot has to split into a main pot and one or more side pots, each with its own eligible-player list — a combinatorial problem that's a well-known source of bugs even in commercial poker platforms.
 - **Server-authoritative state, zero trust in the client.** Every bet, fold, call, and raise is validated server-side against the current betting round and stack sizes — the client never decides what's a legal action.
@@ -179,7 +179,7 @@ Every multiplayer game in this portfolio started the same way: a family or frien
 
 > Another full-control build: a simple, beginner-friendly party game anyone can pick up in seconds, no explanation needed — just join the room and race.
 
-**The hard parts:**
+**The complex parts:**
 - **True synchronized start across clients.** Every player has to begin the identical sequence at the exact same instant, despite each client having a different network latency to the server — a naive "send start signal" approach means players effectively start at different times.
 - **Live progress streaming without drift.** As players race, their progress has to update on every other client in near real time, without the state gradually desyncing over the course of a round.
 - **Deterministic tie resolution under real-world timing noise.** With network jitter, two players can appear to finish at nearly the same server timestamp — the ranking engine has to apply a strict, deterministic tiebreak order (completion → time → errors → shared ranks) so every client computes the *identical* final ranking, not just "whoever's packet arrived first."
@@ -199,7 +199,6 @@ Every multiplayer game in this portfolio started the same way: a family or frien
 
 > Most Undercover apps draw from a small, fixed word pool — play a few rounds with the same group and you start seeing repeats, which kills the fun fast. I rebuilt it with a much larger, customizable word bank and my own game logic, so the same group of family or friends can play round after round without the game running dry.
 
-**The hard parts:**
 - **Hidden-role state management.** Each player has a different, secret role (civilian, undercover, sometimes a blank) tied to a shared-but-slightly-different word pair — the game state has to track who knows what without ever leaking a role to the wrong client.
 - **Scalable, non-repetitive word bank.** A large, categorized word-pair bank had to be built and structured so the game can pull fresh, appropriately-difficult pairs round after round without obvious repeats or mismatched difficulty.
 - **Custom elimination/voting logic.** Turn order, voting, and elimination all had to be built as a real state machine — handling ties, re-votes, and edge cases like everyone voting for themselves — rather than hardcoded for one fixed player count.
@@ -243,22 +242,10 @@ Beyond the feature lists, here's the engineering that actually made these system
 <tr><td><b>System Design</b></td><td>REST · GraphQL · Microservices · Event-driven Architecture · Real-time, concurrency-safe systems</td></tr>
 </table>
 
-## 🎓 Education
-
-**Engineering Degree in Computer Science — Data Science Track**
-Saad Dahleb University, Blida 1, Algeria · 4th Year (2022 – Present)
-
----
-
-## 🌍 Languages
-
-🇩🇿 **Arabic** — Native &nbsp;·&nbsp; 🇫🇷 **French** — Intermediate &nbsp;·&nbsp; 🇬🇧 **English** — Intermediate
-
 ---
 
 <div align="center">
 
-*Open to interesting problems — especially the ones that don't fit in a textbook.*
 
 📧 **truly.isaak@gmail.com**
 
