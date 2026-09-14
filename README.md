@@ -126,7 +126,15 @@ Every multiplayer game in this portfolio started the same way: a family or frien
 
 ### 🀱 Domino Table — Physical-Freedom Real-Time Multiplayer Dominoes
 
-> Started from a very specific family problem: a standard double-six domino set only has 28 tiles, which caps a real game at 4 players — and family gatherings are rarely exactly 4 people. So instead of just digitizing the classic game, I generalized it: **double-six through double-nine sets**, so the table scales up to fit however many family members and friends actually showed up. The result became a production-grade multiplayer platform that breaks from rigid digital-domino conventions, letting players freely arrange tiles in 2D space on a felt table exactly like the physical game, with a dynamic scoring engine evaluating open chain ends on every move. Every action is validated and serialized server-side to prevent race conditions, hands are cryptographically isolated per-socket, and every state transition is checkpointed to survive server restarts.
+> Started from a very specific family problem: a standard double-six domino set only has 28 tiles, which caps a real game at 4 players — and family gatherings are rarely exactly 4 people. So instead of just digitizing the classic game, I generalized it: **double-six through double-nine sets**, so the table scales up to fit however many family members and friends actually showed up. The result became a production-grade multiplayer platform that breaks from rigid digital-domino conventions, letting players freely arrange tiles in 2D space on a felt table exactly like the physical game, with a dynamic scoring engine evaluating open chain ends on every move.
+
+**The hard parts:**
+- **Free-placement geometry, not a fixed grid.** Physical dominoes don't snap to a grid — players slide tiles anywhere on a 2D felt surface, at any angle, from either end of a branching chain. That means every move has to be geometrically validated (does this tile's pip value actually match an open end at this position?) rather than just checked against a linear array like most digital domino games do.
+- **Generalized rule engine across five tile sets.** Double-six, seven, eight, and nine sets don't just add more tiles — they change the pip-value range, the total tile count, and the math behind valid matches. The scoring and move-validation logic had to be written generically against tile-set size rather than hardcoded for 28 tiles.
+- **Server-authoritative concurrency.** Every placement, draw, and pass is validated and serialized server-side so two players can't act on the same open end in a race condition — critical once you allow more than 4 simultaneous players.
+- **Zero-leak hand isolation.** Each player's tiles are only ever sent to their own socket — verified with a dedicated security test suite, not just assumed safe because "the client won't render it."
+- **Crash-safe state.** Every state transition is checkpointed to SQLite (WAL mode), so a server restart or a dropped connection mid-game doesn't wipe out a match — a real risk with 5+ players and longer game sessions.
+- **Dual scoring engines.** Classic (pip-sum) and All Fives/Muggins (multiples-of-five on open chain ends) are structurally different scoring models, both implemented and kept in sync with the same move engine.
 
 | | |
 |---|---|
@@ -144,7 +152,14 @@ Every multiplayer game in this portfolio started the same way: a family or frien
 
 ### ♠️ Royal Hold'em — Real-Time Multiplayer Texas Hold'em Poker
 
-> Built for the same reason as the rest: I wanted poker night with full control over the experience — no app-store restrictions, no confusing interfaces that scare off beginners, just a clean table my friends could actually sit down and play at. Underneath that simple goal is a fully server-authoritative poker engine built from scratch. The real difficulty is correctness under complexity: a 7-card hand evaluator disambiguates all 10 hand rankings including tricky edge cases (Ace-5 wheel straights, kicker ties), and side-pot resolution for uneven all-in stacks is combinatorially fiddly — a classic source of bugs even in commercial platforms.
+> Built for the same reason as the rest: I wanted poker night with full control over the experience — no app-store restrictions, no confusing interfaces that scare off beginners, just a clean table my friends could actually sit down and play at. Underneath that simple goal is a fully server-authoritative poker engine built from scratch.
+
+**The hard parts:**
+- **7-card hand evaluation across all 10 rankings.** With 2 hole cards + 5 community cards, the evaluator has to find the *best possible* 5-card hand out of 21 combinations, correctly handling notorious edge cases: the Ace-5 "wheel" straight (A-2-3-4-5, where the Ace counts low), and tie-breaking by kicker cards when two players hold the same hand category.
+- **Side-pot resolution for uneven all-ins.** When players go all-in with different stack sizes, the pot has to split into a main pot and one or more side pots, each with its own eligible-player list — a combinatorial problem that's a well-known source of bugs even in commercial poker platforms.
+- **Server-authoritative state, zero trust in the client.** Every bet, fold, call, and raise is validated server-side against the current betting round and stack sizes — the client never decides what's a legal action.
+- **Zero-leak hole cards.** Each player's hole cards are transmitted only to their own socket, so there's no way to inspect an opponent's cards even via browser DevTools.
+- **Session-based reconnection mid-hand.** If a player's connection drops mid-hand, they can reconnect to the same seat with the same stack and cards — instead of losing their spot or forfeiting the pot.
 
 | | |
 |---|---|
@@ -160,7 +175,12 @@ Every multiplayer game in this portfolio started the same way: a family or frien
 
 ### 🍾 Bottle Race — Real-Time Multiplayer Matching Game
 
-> Another full-control build: a simple, beginner-friendly party game anyone can pick up in seconds, no explanation needed — just join the room and race. The core engineering challenge is concurrency: every client must start at the exact same synchronized instant and stream live progress without drift, while a deterministic ranking engine resolves ties identically across every client even under real network latency.
+> Another full-control build: a simple, beginner-friendly party game anyone can pick up in seconds, no explanation needed — just join the room and race.
+
+**The hard parts:**
+- **True synchronized start across clients.** Every player has to begin the identical sequence at the exact same instant, despite each client having a different network latency to the server — a naive "send start signal" approach means players effectively start at different times.
+- **Live progress streaming without drift.** As players race, their progress has to update on every other client in near real time, without the state gradually desyncing over the course of a round.
+- **Deterministic tie resolution under real-world timing noise.** With network jitter, two players can appear to finish at nearly the same server timestamp — the ranking engine has to apply a strict, deterministic tiebreak order (completion → time → errors → shared ranks) so every client computes the *identical* final ranking, not just "whoever's packet arrived first."
 
 | | |
 |---|---|
@@ -185,9 +205,41 @@ Every multiplayer game in this portfolio started the same way: a family or frien
 
 > Most Undercover apps draw from a small, fixed word pool — play a few rounds with the same group and you start seeing repeats, which kills the fun fast. I rebuilt it with a much larger, customizable word bank and my own game logic, so the same group of family or friends can play round after round without the game running dry.
 
+**The hard parts:**
+- **Hidden-role state management.** Each player has a different, secret role (civilian, undercover, sometimes a blank) tied to a shared-but-slightly-different word pair — the game state has to track who knows what without ever leaking a role to the wrong client.
+- **Scalable, non-repetitive word bank.** A large, categorized word-pair bank had to be built and structured so the game can pull fresh, appropriately-difficult pairs round after round without obvious repeats or mismatched difficulty.
+- **Custom elimination/voting logic.** Turn order, voting, and elimination all had to be built as a real state machine — handling ties, re-votes, and edge cases like everyone voting for themselves — rather than hardcoded for one fixed player count.
+
 `HTML/CSS/JS`
 
 ---
+
+## 🧬 Technical Depth
+
+Beyond the feature lists, here's the engineering that actually made these systems hard to build:
+
+| Domain | Advanced Technique |
+|---|---|
+| 🎯 Reinforcement Learning | Continuous-action-space RL across **242 competing zones** and 1,365 agents; benchmarked **TD3, SAC, PPO** against each other rather than picking one blind |
+| 🌐 Distributed Systems | Multi-service architectures (FastAPI + Next.js + gateway + Postgres/Redis) kept **consistent in real time** across independent services |
+| 🔐 Concurrency & Security | Server-authoritative state machines with **per-socket hand isolation**, verified by dedicated security test suites — not just "trust the client" |
+| 🗄️ Data Integrity | **PostgreSQL time-range constraints** enforced at the database level to make double-booking structurally impossible, not just app-layer-checked |
+| ⚡ Real-Time Infrastructure | Kafka + Go + WebSockets for low-latency streaming pipelines; sub-second synchronized starts across clients under real network jitter |
+| 🧮 Algorithmic Correctness | Full 7-card poker hand evaluator (all 10 rankings, wheel straights, kicker ties) and side-pot resolution for uneven all-in stacks — notoriously bug-prone even in commercial platforms |
+| 🧠 NLP/RAG | Custom intent-detection pipeline across **four languages/dialects** (Darija, Arabic, French, English) with no off-the-shelf tooling built for that combination |
+| 💾 Fault Tolerance | Crash-safe, checkpointed state (SQLite WAL mode) with full session-based reconnection — no game or transaction lost on a dropped connection or server restart |
+
+---
+
+## 🛠️ Full Stack Snapshot
+
+<table>
+<tr><td width="150"><b>AI / ML</b></td><td>Deep RL (SAC, TD3, PPO) · LLMs · RAG · AI Agents · NLP · Time-Series Forecasting · Recommender Systems · Anomaly/Fraud Detection</td></tr>
+<tr><td><b>Languages</b></td><td>Python · JavaScript · TypeScript · C · Java</td></tr>
+<tr><td><b>Frameworks</b></td><td>LangChain · TensorFlow/Keras · PyTorch · Scikit-learn · FastAPI · Flask · React · Node.js · Express.js</td></tr>
+<tr><td><b>Data & Infra</b></td><td>Apache Kafka · WebSockets · PostgreSQL · MongoDB · MySQL · Redis · Vector Databases · Docker · Kubernetes · Prometheus · Grafana</td></tr>
+<tr><td><b>System Design</b></td><td>REST · GraphQL · Microservices · Event-driven Architecture · Real-time, concurrency-safe systems</td></tr>
+</table>
 
 ## 🎓 Education
 
