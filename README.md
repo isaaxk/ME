@@ -68,7 +68,9 @@ Two years, ten-plus shipped projects, one recurring theme: clients come with a b
 
 ---
 
-## 🛠️ Selected Projects
+
+
+## 🛠️ Other Selected Projects
 
 ### 🤖 Multilingual WhatsApp Commerce Automation Platform
 
