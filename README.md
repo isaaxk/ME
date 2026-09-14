@@ -93,8 +93,6 @@ Suite of multiplayer web games designed with strict zero-trust client architectu
 
 ---
 
-### 📊 GitHub Activity
-
 <div align="center">
 
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=isaaxk&theme=tokyonight&hide_border=true&background=0d1117&ring=00D2FF&fire=00D2FF&currStreakNum=ffffff" alt="GitHub Streak" />
