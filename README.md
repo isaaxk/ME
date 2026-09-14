@@ -2,7 +2,7 @@
 
 # 👋 Boudaoud Ishak
 
-*AI & Software Engineer · Data Scientist*
+#### *AI & Software Engineer · Data Scientist* ####
 
  ### ***Open to interesting problems — especially the ones that don't fit in a textbook.***
 
