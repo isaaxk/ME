@@ -1,239 +1,247 @@
+<!-- ================================================================= -->
+<!--                   ISHAK BOUDAOUD | GITHUB PROFILE                 -->
+<!-- ================================================================= -->
+
 <div align="center">
 
-# 👋 Boudaoud Ishak
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,24,30&height=220&section=header&text=Ishak%20Boudaoud&fontSize=52&fontColor=ffffff&animation=twinkling&fontAlignY=36&desc=AI%20%26%20Software%20Engineer%20%7C%20Data%20Scientist%20%7C%20Deep%20RL%20%26%20Distributed%20Systems&descAlignY=58&descSize=16" width="100%"/>
 
-## AI & Software Engineer · Data Scientist
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=21&pause=1000&color=00D2FF&center=true&vCenter=true&width=720&height=45&lines=Building+systems+without+clean+textbook+answers;Deep+RL%3A+Continuous+Action+Spaces+%26+Dynamic+Pricing;Multilingual+LLM+%26+RAG+Agents+(Darija%2C+AR%2C+FR%2C+EN);Distributed+Backends+%7C+Go+%7C+Kafka+%7C+WebSockets;10%2B+End-to-End+Shipped+Products%3A+Data+%E2%86%92+Deployment" alt="Typing SVG" />
 
- ### ***Open to interesting problems — especially the ones that don't fit in a textbook.***
+<br/>
 
-📍 Blida, Algeria · ✉️ truly.isaak@gmail.com · ☎️ +213 552 738 007
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/ishak-boudaoud-8729ba251)
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Kafka](https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:truly.isaak@gmail.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio%20Repo-ME-1F6FEB?style=for-the-badge&logo=github&logoColor=white)](https://github.com/isaaxk/ME)
+[![Location](https://img.shields.io/badge/Location-Blida%2C%20Algeria-238636?style=for-the-badge&logo=googlemaps&logoColor=white)](#)
+&nbsp;
+<img src="https://komarev.com/ghpvc/?username=isaaxk&style=for-the-badge&color=00D2FF&label=PROFILE+VIEWS"/>
 
 </div>
 
----
+<br/>
 
-## 🧭 The Short Version
+<!-- ========================= PHILOSOPHY / ABOUT ========================= -->
 
-Final-year CS Engineering student (Data Science track) shipping AI systems that solve real problems for real businesses, and a habit of owning the full pipeline from data to deployment. I go looking for problems without a clean textbook answer: reinforcement learning agents competing across hundreds of zones, language models that have to understand a mix no off-the-shelf tool was built for — that's exactly where I want to be.
+## ⚡ &nbsp;The Short Version
 
----
+> *"I go looking for problems without a clean textbook answer: reinforcement learning agents competing across hundreds of continuous-action zones, language models that have to decipher a mix no off-the-shelf tool was built for, and distributed engines where race conditions are structurally impossible at the database layer."*
 
-## ⚡ Flagship Work
+Final-year Computer Science Engineering student (**Data Science track**) at *Université Saad Dahlab de Blida 1* with **2+ years** of hands-on experience shipping real-world AI and software products. I own the full pipeline — from mathematical formulation and model training to low-latency backend architectures, real-time telemetry, and containerized deployment.
 
-### Student Researcher
-*Student Researcher, Université Saad Dahlab de Blida 1 — May 2026 to Present*
+<br/>
 
-Deep RL for Ride-Hailing Surge Pricing
+<table align="center" width="100%">
+<tr>
+<td width="50%" valign="top">
 
-> Started from a real paper — *"Scalable RL Approaches for Dynamic Pricing in Ride-Hailing Systems"* (Lei & Ukkusuri, 2023) — and built past it.
+### 🎯 &nbsp;Applied AI & Deep RL
+- 🚖 **Surge Pricing at Scale:** Benchmarked **TD3, SAC, PPO** across **242 NYC zones** and 1,365 vehicles, hitting **\$240,949/wk** profit (+18% over published paper).
+- 🧠 **Multi-Dialect RAG:** Custom NLP pipeline tackling mixed **Algerian Darija, Arabic, French, and English**.
+- 🤖 **Autonomous AI Agents:** Production tool-calling, conversational memory buffering, and dynamic multi-format ingestion.
 
-The setup: **242 NYC zones**, **1,365 simulated vehicles**, a continuous action space, three competing RL algorithms benchmarked against each other (TD3, SAC, PPO).
+</td>
+<td width="50%" valign="top">
 
-**What actually moved the needle:**
+### ⚙️ &nbsp;Core Systems & Backend
+- 🔒 **Database-Level Concurrency:** Enforcing double-booking prevention with PostgreSQL time-range constraints (`EXCLUDE USING GIST`).
+- ⚡ **Low-Latency Streaming:** Sub-second event pipelines powered by **Go, Apache Kafka, and WebSockets**.
+- 🛡️ **Zero-Leak Architecture:** Server-authoritative state machines with transport-isolated socket data and crash-safe SQLite (WAL).
 
-| Metric | Result |
-|---|---|
-| 💰 Weekly profit achieved | **$240,949** across 5 independent runs |
-| 📈 Improvement over published baseline | **~18% above** |
-| 🌦️ Profit lift from weather-aware features alone | **+$71,024 (+41.8%)** |
-| 🚖 Simulated passengers served weekly | **~576,805** |
+</td>
+</tr>
+</table>
 
-Then it got a real-time monitoring dashboard on top — Kafka, Go, WebSockets, React, Mapbox GL — because a model nobody can *see* working isn't finished. Built under guidance from **Dr. Zengxiang Lei (Purdue University)**.
+<div align="center">
+<img src="https://raw.githubusercontent.com/trinib/trinib/82213791fa9ff58d3ca768ddd6de2489ec23ffca/images/footer.svg" width="100%"/>
+</div>
 
-`Python` `Go` `WebSocket` `Kafka` `TD3` `SAC` `PPO` `React` `Mapbox GL`
+<!-- ========================= TECH ARSENAL ========================= -->
 
----
+## 🧰 &nbsp;Tech Arsenal
 
-### 🤖 Freelance AI & Software Engineering
-*Self-Employed — Nov 2023 to Present*
+<table align="center" width="100%">
+<tr>
+<td valign="top" width="50%">
 
-Two years, ten-plus shipped projects, one recurring theme: clients come with a business problem, not a tech stack — and I own the full path from raw data to a deployed API.
+**🤖 AI · Deep Reinforcement Learning · LLMs**
+<p>
+<img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,sklearn&theme=dark" height="40"/>
+</p>
+`TD3` `SAC` `PPO` `Gymnasium` `LangChain` `Vector DBs` `RAG` `NLP` `Computer Vision` `Time-Series` `Recommender Systems`
 
-- 🧠 Custom **AI chatbots & agents** — RAG, tool calling, memory, document ingestion — built for real business automation, not demos
-- 📊 AI-powered **web apps & dashboards** for client-facing analytics
-- 🎯 **Recommendation engines**, demand/sales forecasting, and real-time **fraud detection** pipelines
-- 🚀 Production **REST APIs** and ML deployments, Python/FastAPI end to end
+</td>
+<td valign="top" width="50%">
 
-`Python` `FastAPI` `LangChain` `RAG` `Vector DBs` `React` `Docker`
+**⚡ Distributed Backend & Real-Time Telemetry**
+<p>
+<img src="https://skillicons.dev/icons?i=go,fastapi,nodejs,express,ts,js&theme=dark" height="40"/>
+</p>
+`Go` `FastAPI` `Node.js` `Express` `REST APIs` `WebSockets` `Socket.io` `Microservices` `Event-Driven Architecture`
 
----
----
+</td>
+</tr>
+<tr>
+<td valign="top" width="50%">
 
+**🗄️ Databases · Storage · Caching**
+<p>
+<img src="https://skillicons.dev/icons?i=postgres,supabase,redis,sqlite,mongodb,mysql&theme=dark" height="40"/>
+</p>
+`PostgreSQL (GiST Constraints)` `Supabase` `Redis` `SQLite (WAL mode)` `Chroma / Pinecone`
 
-## 🛠️ Other Selected Projects
+</td>
+<td valign="top" width="50%">
 
-### 🤖 Multilingual WhatsApp Commerce Automation Platform
+**🖥️ Frontend & Data Visualization**
+<p>
+<img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,vite,html,css&theme=dark" height="40"/>
+</p>
+`React 19` `Next.js` `Mapbox GL` `deck.gl` `TailwindCSS` `Vite` `Bilingual RTL/LTR`
 
-> A microservices platform exploring automated conversational commerce over WhatsApp, with the core engineering challenge being reliable intent detection across a mixed-language environment (Algerian Darija, Arabic, French, English) that most NLP tooling isn't designed for — while keeping four independent services consistent in real time.
+</td>
+</tr>
+<tr>
+<td valign="top" width="50%">
 
-| | |
-|---|---|
-| 🧩 | Multi-service architecture (backend, dashboard, messaging gateway, data layer) kept in sync in real time |
-| 🧠 | Custom NLP/RAG pipeline for intent detection across four languages/dialects |
-| ⚙️ | Agent-driven conversational flows with stateful action execution |
-| 🧑‍💼 | Self-service client configuration portal |
-| 🔄 | Automated data sync via webhooks |
+**📡 Streaming & Message Brokers**
+<p>
+<img src="https://skillicons.dev/icons?i=kafka&theme=dark" height="40"/>
+</p>
+`Apache Kafka` `WebSocket Pipelines` `Event Streaming`
 
-`Python (FastAPI)` `Next.js` `PostgreSQL` `Redis` `Docker` `WhatsApp` `RAG/NLP`
+</td>
+<td valign="top" width="50%">
 
----
+**☁️ DevOps · Observability · Tooling**
+<p>
+<img src="https://skillicons.dev/icons?i=docker,linux,git,github,prometheus,grafana&theme=dark" height="40"/>
+</p>
+`Docker` `Prometheus` `Grafana` `Linux` `Git` `CI/CD` `Baileys API`
 
-### 🪒 Unified Multi-Vertical Booking & Scheduling Engine
+</td>
+</tr>
+</table>
 
-> A booking platform exploring how a single scheduling engine can serve fundamentally different business models — staff-based (appointments) and pool-based (shared-resource) capacity — without either leaking assumptions into the other's data model.
+<div align="center">
+<img src="https://raw.githubusercontent.com/trinib/trinib/82213791fa9ff58d3ca768ddd6de2489ec23ffca/images/footer.svg" width="100%"/>
+</div>
 
-| | |
-|---|---|
-| 🧮 | Dual-capacity scheduling abstraction (resource-based + pool-based) on one engine |
-| 🔒 | PostgreSQL time-range constraints for concurrency-safe booking |
-| 📱 | Self-hosted WhatsApp messaging integration |
-| 📇 | Phone-based identity/session handling |
-| 🪑 | Waitlist with automatic slot recycling |
+<!-- ========================= FLAGSHIP PROJECTS ========================= -->
 
-`React 19` `TypeScript` `Vite` `TailwindCSS` `Supabase (Postgres/Edge Functions/RLS)` `Deno` `Node.js` `Baileys`
+## 🌟 &nbsp;Featured Systems
 
+### 🚕 [Dynamic Price Optimization — RL for Ride-Hailing Surge Pricing](https://github.com/isaaxk/ME)
+> *Continuous-action reinforcement learning system optimizing surge price multipliers across 242 NYC zones with weather-aware intelligence.*
 
----
+- 📈 **Empirical Benchmark:** Trained & benchmarked continuous-action agents (**TD3**, **SAC**, **PPO**) in an environment simulating 1,365 vehicles and ~576,805 weekly passengers.
+- 🌦️ **Weather Sensitivity:** Weather-aware state integration provided a **+\$71,024 (+41.8%)** profit lift over non-weather configurations.
+- 💰 **Key Result:** Achieved **\$240,949 weekly profit** across 5 independent seeds — **~18% higher** than the baseline in Lei & Ukkusuri (2023) (guided by Dr. Zengxiang Lei, Purdue University).
+- ⚡ **Observability:** Low-latency telemetry backend using **Go + WebSockets + Kafka**, visualised on a **React + deck.gl / Mapbox GL** demand heatmap.
 
-### 💡 AutoLed — Bilingual Automotive E-Commerce & Booking Platform
-
-> A full-stack bilingual platform for a real automotive lighting business, combining a product storefront, appointment booking, and a complete no-code operations back-office. The engineering challenge is breadth under real business constraints: true RTL/LTR bilingual support down to typography, nationwide delivery-cost logic, and an admin system flexible enough for a non-technical shop owner to run day-to-day.
-
-| | |
-|---|---|
-| 🌍 | Full French ⇄ Arabic bilingual UI with automatic RTL layout switching |
-| 🎬 | Interactive before/after lighting comparison and live product demo animation |
-| 🛒 | Order + appointment booking flow with nationwide delivery calculation |
-| 🛠️ | No-code admin editing: products, categories, prices, contact info, site announcements |
-| 🔐 | Full admin back-office: order tracking, appointments, products, images, delivery prices, CSV export, sales stats |
-
-`React (Vite)` `Node/Express` `TailwindCSS` `Render Deployment`
-
----
-
-
-### 🎲 A Note on the Games
-
-Every multiplayer game in this portfolio started the same way: a family or friend gathering, and an off-the-shelf app that didn't fit it. I wanted full control over the experience — the rules, the scale, the difficulty — and something easy enough for beginners to sit down and play immediately.
-
----
-
-### 🀱 Domino Table — Physical-Freedom Real-Time Multiplayer Dominoes
-
-> Started from a very specific problem: a standard double-six domino set only has 28 tiles, which caps a real game at 4 players — and family gatherings are rarely exactly 4 people. So I generalized it: **double-six, double-seven ... double-nine sets** and added many features and customizations.
-
-**The complex parts:**
-- **Free-placement geometry, not a fixed grid.** Physical dominoes don't snap to a grid — players put tiles anywhere on a 2D felt surface, at any angle, from either end of a branching chain. That means every move has to be geometrically validated (does this tile's pip value actually match an open end at this position?) rather than just checked against a linear array like most digital domino games do.
-- **Generalized rule engine across five tile sets.** Double-six, seven, eight, and nine sets don't just add more tiles — they change the pip-value range, the total tile count, and the math behind valid matches. The scoring and move-validation logic had to be written generically against tile-set size rather than hardcoded for 28 tiles.
-- **Server-authoritative concurrency.** Every placement, draw, and pass is validated and serialized server-side so two players can't act on the same open end in a race condition — critical once you allow more than 4 simultaneous players.
-- **Zero-leak hand isolation.** Each player's tiles are only ever sent to their own socket — verified with a dedicated security test suite, not just assumed safe because "the client won't render it."
-- **Crash-safe state.** Every state transition is checkpointed to SQLite (WAL mode), so a server restart or a dropped connection mid-game doesn't wipe out a match — a real risk with 5+ players and longer game sessions.
-- **Dual scoring engines.** Classic (pip-sum) and All Fives/Muggins (multiples-of-five on open chain ends) are structurally different scoring models, both implemented and kept in sync with the same move engine.
-
-| | |
-|---|---|
-| 👨‍👩‍👧‍👦 | Scalable tile sets (double-six → double-nine) so more than 4 people can play at once |
-| 🎲 | True physical-table freedom: tiles placed anywhere on a 2D plane |
-| 🔒 | Zero-leak hand masking enforced at the transport layer — verified by a dedicated security test suite |
-| 💾 | Persistent, crash-safe state via SQLite (WAL mode), with full reconnection support |
-| 🧮 | Two full scoring engines: Classic (pip-sum) and All Fives/Muggins |
-| ✅ | 26/26 automated tests passing, including a full multi-client WebSocket simulation |
-| 📱 | Mobile-first UI with pinch-zoom/pan felt canvas across 10 distinct game states |
-
-`TypeScript` `React 19` `Node.js` `Socket.io` `SQLite` `Vite` `TailwindCSS`
+`Python` `Go` `Kafka` `WebSockets` `TD3` `SAC` `PPO` `React` `Mapbox GL` `Prometheus` `Grafana` `Docker`
 
 ---
 
-### ♠️ Royal Hold'em — Real-Time Multiplayer Texas Hold'em Poker
+### 🤖 [Multilingual AI Agent Platform & WhatsApp Commerce Engine](https://github.com/isaaxk/ME)
+> *Microservices platform for automated conversational commerce over WhatsApp in mixed-dialect, code-switched environments.*
 
-> Built for the same reason as the rest: I wanted poker night with full control over the experience. Underneath that simple goal is a fully server-authoritative poker engine.
+- 🧠 **Dialect-Resilient NLP:** Custom NLP/RAG pipeline engineered to accurately classify intent across code-switched **Algerian Darija, Arabic, French, and English**.
+- ⚙️ **4-Tier Architecture:** FastAPI backend, Next.js client portal, messaging gateway, and PostgreSQL/Redis data layer synchronized via real-time webhooks.
+- 🔄 **Stateful Agents:** Dynamic tool calling, conversation memory buffers, catalog discovery, order checkout, and merchant self-service onboarding.
 
-**The complex parts:**
-- **7-card hand evaluation across all 10 rankings.** With 2 hole cards + 5 community cards, the evaluator has to find the *best possible* 5-card hand out of 21 combinations, correctly handling notorious edge cases: the Ace-5 "wheel" straight (A-2-3-4-5, where the Ace counts low), and tie-breaking by kicker cards when two players hold the same hand category.
-- **Side-pot resolution for uneven all-ins.** When players go all-in with different stack sizes, the pot has to split into a main pot and one or more side pots, each with its own eligible-player list — a combinatorial problem that's a well-known source of bugs even in commercial poker platforms.
-- **Server-authoritative state, zero trust in the client.** Every bet, fold, call, and raise is validated server-side against the current betting round and stack sizes — the client never decides what's a legal action.
-- **Zero-leak hole cards.** Each player's hole cards are transmitted only to their own socket, so there's no way to inspect an opponent's cards even via browser DevTools.
-- **Session-based reconnection mid-hand.** If a player's connection drops mid-hand, they can reconnect to the same seat with the same stack and cards — instead of losing their spot or forfeiting the pot.
-
-| | |
-|---|---|
-| 🃏 | Complete 7-card hand evaluator, all 10 rankings, full edge-case handling |
-| 💰 | Full side-pot and multi-way pot resolution for uneven stacks |
-| 🔒 | Zero-leak architecture — hole cards sent only to their owner's socket |
-| 🔁 | Session-based reconnection with no lost seats or progress |
-| ✅ | Automated test suite (hand evaluation + full game-cycle simulation) |
-
-`Node.js` `Express` `Socket.io` `JavaScript`
+`Python (FastAPI)` `Next.js` `LangChain` `Vector DBs` `PostgreSQL` `Redis` `Docker` `WhatsApp API` `RAG/NLP`
 
 ---
 
-### 🍾 Bottle Race — Real-Time Multiplayer Matching Game
+### 🪒 [Unified Multi-Vertical Booking & Scheduling Engine](https://github.com/isaaxk/ME)
+> *High-concurrency scheduling abstraction serving appointment-based (staff) and pool-based (shared inventory) capacity models on one engine.*
 
-> Another full-control build: a simple, beginner-friendly party game anyone can pick up in seconds, no explanation needed — just join the room and race.
+- 🔒 **Structural Concurrency:** Eliminated double-booking race conditions at the database level with **PostgreSQL time-range exclusion constraints** (`EXCLUDE USING GIST`).
+- 🔄 **Zero Leakage:** Dual-capacity abstraction keeping 1-on-1 staff slots and shared equipment pools completely segregated without schema bloat.
+- 📱 **Headless Messaging:** Integrated self-hosted WhatsApp messaging (Baileys), phone session auth, and an automated waitlist slot recycler.
 
-**The complex parts:**
-- **True synchronized start across clients.** Every player has to begin the identical sequence at the exact same instant, despite each client having a different network latency to the server — a naive "send start signal" approach means players effectively start at different times.
-- **Live progress streaming without drift.** As players race, their progress has to update on every other client in near real time, without the state gradually desyncing over the course of a round.
-- **Deterministic tie resolution under real-world timing noise.** With network jitter, two players can appear to finish at nearly the same server timestamp — the ranking engine has to apply a strict, deterministic tiebreak order (completion → time → errors → shared ranks) so every client computes the *identical* final ranking, not just "whoever's packet arrived first."
-
-| | |
-|---|---|
-| 🏁 | Host-configurable rooms with 6 difficulty tiers and QR-code invites |
-| ⚡ | Fully synchronized start with live opponent progress tracking |
-| 🏆 | Deterministic tiebreak ranking engine (completion → time → errors → shared ranks) |
-| 🎯 | Automatic finish detection, no submit button |
-
-`Node.js` `WebSocket` `JavaScript`
+`React 19` `TypeScript` `Supabase` `PostgreSQL` `Edge Functions` `Deno` `Node.js` `Baileys` `TailwindCSS`
 
 ---
 
-### 🕵️ Undercover — Party Game, Reimagined
+### 🎲 [Server-Authoritative Real-Time Game Engines](https://github.com/isaaxk/ME)
+> *Competitive multiplayer web games designed with strict client zero-trust, continuous physics/geometry, and crash-safe fault tolerance.*
 
-> Most Undercover apps draw from a small, fixed word pool — play a few rounds with the same group and you start seeing repeats, which kills the fun fast. I rebuilt it with a much larger, customizable word bank and my own game logic, so the same group of family or friends can play round after round without the game running dry.
+- 🀱 **Domino Table:** Continuous 2D placement geometry engine (arbitrary angles on felt canvas) replacing rigid linear arrays; generalized across double-6 through double-9 sets for $>4$ players; verified by 26/26 automated tests.
+- ♠️ **Texas Hold'em Poker:** Full 7-card evaluator across all 10 rankings (handling wheel straights and kicker ties) with combinatorial multi-way side-pot resolution for uneven all-ins.
+- 🛡️ **Security & Persistence:** Zero-leak socket transport mask (opponent hands/cards are never transmitted to unauthorized sockets); SQLite WAL crash-safe checkpoints with seamless mid-hand reconnection.
 
-- **Hidden-role state management.** Each player has a different, secret role (civilian, undercover, sometimes a blank) tied to a shared-but-slightly-different word pair — the game state has to track who knows what without ever leaking a role to the wrong client.
-- **Scalable, non-repetitive word bank.** A large, categorized word-pair bank had to be built and structured so the game can pull fresh, appropriately-difficult pairs round after round without obvious repeats or mismatched difficulty.
-- **Custom elimination/voting logic.** Turn order, voting, and elimination all had to be built as a real state machine — handling ties, re-votes, and edge cases like everyone voting for themselves — rather than hardcoded for one fixed player count.
+`TypeScript` `Node.js` `Socket.io` `WebSockets` `React` `SQLite (WAL)` `TailwindCSS`
 
-`HTML/CSS/JS`
+<div align="center">
+<img src="https://raw.githubusercontent.com/trinib/trinib/82213791fa9ff58d3ca768ddd6de2489ec23ffca/images/footer.svg" width="100%"/>
+</div>
 
----
+<!-- ========================= ENGINEERING PRINCIPLES ========================= -->
 
-### 🛍️ Storefront — Vanilla JS E-Commerce Prototype
+## 🧬 &nbsp;Engineering Principles (How I Build)
 
-> A lightweight e-commerce front-end built without any framework — cart, checkout, and admin logic implemented from first principles.
+<table align="center" width="100%">
+<tr>
+<td width="33%" valign="top">
 
-`JavaScript` `HTML/CSS`
+### 1. Zero-Trust Client State
+Every action, bet, tile placement, and transaction is validated server-side. Private state (cards, hand tiles, tokens) never leaks across the transport layer — proven via dedicated socket-level test suites.
 
----
+</td>
+<td width="33%" valign="top">
 
-## 🧬 Technical Depth
+### 2. Database-Level Invariants
+Concurrency bugs shouldn't be handled by fragile application locks. Critical constraints (like schedule overlaps) are mathematically enforced directly in PostgreSQL via GiST exclusion range indexes.
 
-Beyond the feature lists, here's the engineering that actually made these systems hard to build:
+</td>
+<td width="33%" valign="top">
 
-| Domain | Advanced Technique |
-|---|---|
-| 🌐 Distributed Systems | Multi-service architectures (FastAPI + Next.js + gateway + Postgres/Redis) kept **consistent in real time** across independent services |
-| 🔐 Concurrency & Security | Server-authoritative state machines with **per-socket hand isolation**, verified by dedicated security test suites — not just "trust the client" |
-| 🗄️ Data Integrity | **PostgreSQL time-range constraints** enforced at the database level to make double-booking structurally impossible, not just app-layer-checked |
-| 🎯 Reinforcement Learning | Continuous-action-space RL across **242 competing zones** and 1,365 agents; benchmarked **TD3, SAC, PPO** against each other rather than picking one blind |
-| ⚡ Real-Time Infrastructure | Kafka + Go + WebSockets for low-latency streaming pipelines; sub-second synchronized starts across clients under real network jitter |
-| 🧮 Algorithmic Correctness | Full 7-card poker hand evaluator (all 10 rankings, wheel straights, kicker ties) and side-pot resolution for uneven all-in stacks — notoriously bug-prone even in commercial platforms |
-| 🧠 NLP/RAG | Custom intent-detection pipeline across **four languages/dialects** (Darija, Arabic, French, English) with no off-the-shelf tooling built for that combination |
-| 💾 Fault Tolerance | Crash-safe, checkpointed state (SQLite WAL mode) with full session-based reconnection — no game or transaction lost on a dropped connection or server restart |
+### 3. Empirical ML Benchmarking
+Never pick an algorithm blindly. For complex problems like dynamic surge pricing, TD3, SAC, and PPO are run head-to-head across multiple seeds with full ablation studies (e.g. weather impacts).
 
----
+</td>
+</tr>
+</table>
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/trinib/trinib/82213791fa9ff58d3ca768ddd6de2489ec23ffca/images/footer.svg" width="100%"/>
+</div>
+
+<!-- ========================= STATS & STREAK ========================= -->
+
+## 📊 &nbsp;GitHub Activity
 
 <div align="center">
 
-📧 **truly.isaak@gmail.com**
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=isaaxk&theme=tokyonight&hide_border=true&background=0d1117&ring=00D2FF&fire=00D2FF&currStreakNum=ffffff" alt="GitHub Streak" />
+
+</div>
+
+<br/>
+
+<!-- ========================= LANGUAGES & FOOTER ========================= -->
+
+<div align="center">
+
+## 🗣️ &nbsp;Languages
+
+[![Arabic](https://img.shields.io/badge/Arabic-Native-00D2FF?style=for-the-badge)](#)
+[![English](https://img.shields.io/badge/English-Professional%20Working-1F6FEB?style=for-the-badge)](#)
+[![French](https://img.shields.io/badge/French-Intermediate-7C9EFF?style=for-the-badge)](#)
+
+<br/><br/>
+
+### 🤝 Let's build systems that matter
+
+Whether it's complex reinforcement learning, distributed real-time systems, or challenging mixed-language NLP, I'm always up for an interesting problem.
+
+<a href="mailto:truly.isaak@gmail.com"><img src="https://img.shields.io/badge/Get%20in%20Touch-truly.isaak%40gmail.com-00D2FF?style=for-the-badge&logo=maildotru&logoColor=black"/></a>
+<a href="https://linkedin.com/in/ishak-boudaoud-8729ba251"><img src="https://img.shields.io/badge/Connect%20on%20LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+
+<br/><br/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,24,30&height=120&section=footer&animation=twinkling" width="100%"/>
 
 </div>
