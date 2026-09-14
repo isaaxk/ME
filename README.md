@@ -118,12 +118,19 @@ Two years, ten-plus shipped projects, one recurring theme: clients come with a b
 
 ---
 
+### 🎲 A Note on the Games
+
+Every multiplayer game in this portfolio started the same way: a family or friend gathering, and an off-the-shelf app that didn't fit it. I wanted full control over the experience — the rules, the scale, the difficulty — and something easy enough for beginners to sit down and play immediately.
+
+---
+
 ### 🀱 Domino Table — Physical-Freedom Real-Time Multiplayer Dominoes
 
-> A production-grade multiplayer dominoes platform that breaks from rigid digital-domino conventions, letting players freely arrange tiles in 2D space on a felt table exactly like the physical game — while a dynamic scoring engine evaluates open chain ends on every move. Every action is validated and serialized server-side to prevent race conditions, hands are cryptographically isolated per-socket, and every state transition is checkpointed to survive server restarts.
+> Started from a very specific family problem: a standard double-six domino set only has 28 tiles, which caps a real game at 4 players — and family gatherings are rarely exactly 4 people. So instead of just digitizing the classic game, I generalized it: **double-six through double-nine sets**, so the table scales up to fit however many family members and friends actually showed up. The result became a production-grade multiplayer platform that breaks from rigid digital-domino conventions, letting players freely arrange tiles in 2D space on a felt table exactly like the physical game, with a dynamic scoring engine evaluating open chain ends on every move. Every action is validated and serialized server-side to prevent race conditions, hands are cryptographically isolated per-socket, and every state transition is checkpointed to survive server restarts.
 
 | | |
 |---|---|
+| 👨‍👩‍👧‍👦 | Scalable tile sets (double-six → double-nine) so more than 4 people can play at once |
 | 🎲 | True physical-table freedom: tiles placed anywhere on a 2D plane |
 | 🔒 | Zero-leak hand masking enforced at the transport layer — verified by a dedicated security test suite |
 | 💾 | Persistent, crash-safe state via SQLite (WAL mode), with full reconnection support |
@@ -137,7 +144,7 @@ Two years, ten-plus shipped projects, one recurring theme: clients come with a b
 
 ### ♠️ Royal Hold'em — Real-Time Multiplayer Texas Hold'em Poker
 
-> A fully server-authoritative poker engine built from scratch. The real difficulty is correctness under complexity: a 7-card hand evaluator disambiguates all 10 hand rankings including tricky edge cases (Ace-5 wheel straights, kicker ties), and side-pot resolution for uneven all-in stacks is combinatorially fiddly — a classic source of bugs even in commercial platforms.
+> Built for the same reason as the rest: I wanted poker night with full control over the experience — no app-store restrictions, no confusing interfaces that scare off beginners, just a clean table my friends could actually sit down and play at. Underneath that simple goal is a fully server-authoritative poker engine built from scratch. The real difficulty is correctness under complexity: a 7-card hand evaluator disambiguates all 10 hand rankings including tricky edge cases (Ace-5 wheel straights, kicker ties), and side-pot resolution for uneven all-in stacks is combinatorially fiddly — a classic source of bugs even in commercial platforms.
 
 | | |
 |---|---|
@@ -153,7 +160,7 @@ Two years, ten-plus shipped projects, one recurring theme: clients come with a b
 
 ### 🍾 Bottle Race — Real-Time Multiplayer Matching Game
 
-> A synchronized multiplayer puzzle game where every player races the identical sequence in real time. The core challenge is concurrency: every client must start at the exact same synchronized instant and stream live progress without drift, while a deterministic ranking engine resolves ties identically across every client even under real network latency.
+> Another full-control build: a simple, beginner-friendly party game anyone can pick up in seconds, no explanation needed — just join the room and race. The core engineering challenge is concurrency: every client must start at the exact same synchronized instant and stream live progress without drift, while a deterministic ranking engine resolves ties identically across every client even under real network latency.
 
 | | |
 |---|---|
@@ -176,7 +183,7 @@ Two years, ten-plus shipped projects, one recurring theme: clients come with a b
 
 ### 🕵️ Undercover — Party Game, Reimagined
 
-> A browser-based version of the classic social deduction party game, rebuilt with custom mechanics.
+> Most Undercover apps draw from a small, fixed word pool — play a few rounds with the same group and you start seeing repeats, which kills the fun fast. I rebuilt it with a much larger, customizable word bank and my own game logic, so the same group of family or friends can play round after round without the game running dry.
 
 `HTML/CSS/JS`
 
