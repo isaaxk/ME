@@ -30,8 +30,10 @@ I like problems that don't have a clean textbook answer. Surge pricing across 24
 
 ## ⚡ Flagship Work
 
-### 🚕 Deep RL for Ride-Hailing Surge Pricing
+### Student Researcher
 *Student Researcher, Université Saad Dahlab de Blida 1 — May 2026 to Present*
+
+Deep RL for Ride-Hailing Surge Pricing
 
 > Started from a real paper — *"Scalable RL Approaches for Dynamic Pricing in Ride-Hailing Systems"* (Lei & Ukkusuri, 2023) — and built past it.
 
@@ -67,55 +69,6 @@ Two years, ten-plus shipped projects, one recurring theme: clients come with a b
 ---
 
 ## 🛠️ Selected Projects
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-**🎛️ Chatbot & AI Agent Generator**
-
-A modular platform for spinning up custom AI agents — RAG, tool calling, and memory built in as configurable primitives, not one-off hacks.
-
-*Role: end-to-end architecture, LangChain integration, API design*
-
-`Python` `LangChain` `Vector DBs` `FastAPI` `React` `Docker`
-
-</td>
-<td width="50%" valign="top">
-
-**🎯 Smart Recommendation Engine**
-
-Hybrid collaborative filtering with rigorous offline evaluation — Precision, Recall, MAP, NDCG — before it ever touched production, then deployed as a real-time serving API.
-
-`Python` `FastAPI` `PostgreSQL` `Redis`
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-**🚕 Surge Pricing RL System**
-
-The productized version of the research above — PPO/TD3/SAC agents, a Go + WebSocket backend for low-latency fare streaming, Prometheus/Grafana observability, and a live React + deck.gl heatmap dashboard.
-
-`Python` `Go` `WebSocket` `PPO/TD3/SAC` `React` `deck.gl` `Prometheus` `Grafana`
-
-</td>
-<td width="50%" valign="top">
-
-**🌐 Web Platforms & Applications**
-
-A range of shipped full-stack products: e-commerce sites, a company/task-organization web app, SaaS platforms, and a real-time multiplayer game.
-
-`React.js` `Node.js` `PostgreSQL` `MongoDB` `Docker`
-
-</td>
-</tr>
-</table>
-
----
-
-## 📦 Full Project Portfolio
 
 ### 🤖 Multilingual WhatsApp Commerce Automation Platform
 
@@ -233,19 +186,6 @@ A range of shipped full-stack products: e-commerce sites, a company/task-organiz
 
 **Engineering Degree in Computer Science — Data Science Track**
 Saad Dahleb University, Blida 1, Algeria · 4th Year (2022 – Present)
-
----
-
-## 🧬 Skill Map
-
-<table>
-<tr><td width="140"><b>AI / ML</b></td><td>Deep RL (SAC, TD3, PPO) · LLMs · RAG · AI Agents · NLP · Computer Vision · Time-Series Forecasting · Recommender Systems · Anomaly/Fraud Detection</td></tr>
-<tr><td><b>Languages</b></td><td>Python · JavaScript · TypeScript · C · Java</td></tr>
-<tr><td><b>Frameworks</b></td><td>LangChain · TensorFlow/Keras · PyTorch · Scikit-learn · Pandas · NumPy · FastAPI · Flask · React · Node.js · Express.js</td></tr>
-<tr><td><b>Data & Infra</b></td><td>Apache Kafka · WebSockets · PostgreSQL · MongoDB · MySQL · Redis · Vector Databases · Docker · Kubernetes · Prometheus · Grafana</td></tr>
-<tr><td><b>System Design</b></td><td>REST · GraphQL · Microservices · Event-driven Architecture · Real-time Systems</td></tr>
-<tr><td><b>Tooling</b></td><td>Git · CI/CD · Linux · Mapbox GL · deck.gl</td></tr>
-</table>
 
 ---
 
