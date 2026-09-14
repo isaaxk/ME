@@ -96,4 +96,3 @@ I'm open to challenging opportunities in **AI Engineering, Reinforcement Learnin
 
 - ✉️ **Email:** [truly.isaak@gmail.com](mailto:truly.isaak@gmail.com)
 - 💼 **LinkedIn:** [linkedin.com/in/ishak-boudaoud-8729ba251](https://www.linkedin.com/in/ishak-boudaoud-8729ba251)
-- 📂 **Portfolio Repository:** [github.com/isaaxk/ME](https://github.com/isaaxk/ME)
