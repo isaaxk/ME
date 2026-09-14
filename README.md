@@ -65,7 +65,7 @@ I focus on problems where standard off-the-shelf tools fall short:
 
 ### 🛠️ Tech Stack & Toolchain
 
-
+Languages :: Python, Go, TypeScript, JavaScript, SQL, C AI / ML :: PyTorch, TensorFlow, Scikit-learn, LangChain, Gymnasium, Vector DBs (Chroma/Pinecone) RL Algorithms :: TD3, SAC, PPO, DQN, Continuous Action Policies Backend & APIs :: FastAPI, Go, Node.js, Express.js, REST APIs, WebSockets, Socket.io Databases :: PostgreSQL (GiST Constraints), Supabase, Redis, SQLite (WAL mode), MongoDB Frontend & Viz :: React 19, Next.js, TailwindCSS, Vite, Mapbox GL, deck.gl Infra & Systems :: Docker, Linux, Git, Apache Kafka, Prometheus, Grafana, CI/CD
 
 <div align="center">
   <img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,sklearn,fastapi,go,ts,react,nextjs,nodejs,postgres,supabase,redis,sqlite,kafka,docker,linux,git,prometheus,grafana&theme=dark" height="38"/>
