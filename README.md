@@ -232,20 +232,7 @@ Beyond the feature lists, here's the engineering that actually made these system
 
 ---
 
-## 🛠️ Full Stack Snapshot
-
-<table>
-<tr><td width="150"><b>AI / ML</b></td><td>Deep RL (SAC, TD3, PPO) · LLMs · RAG · AI Agents · NLP · Time-Series Forecasting · Recommender Systems · Anomaly/Fraud Detection</td></tr>
-<tr><td><b>Languages</b></td><td>Python · JavaScript · TypeScript · C · Java</td></tr>
-<tr><td><b>Frameworks</b></td><td>LangChain · TensorFlow/Keras · PyTorch · Scikit-learn · FastAPI · Flask · React · Node.js · Express.js</td></tr>
-<tr><td><b>Data & Infra</b></td><td>Apache Kafka · WebSockets · PostgreSQL · MongoDB · MySQL · Redis · Vector Databases · Docker · Kubernetes · Prometheus · Grafana</td></tr>
-<tr><td><b>System Design</b></td><td>REST · GraphQL · Microservices · Event-driven Architecture · Real-time, concurrency-safe systems</td></tr>
-</table>
-
----
-
 <div align="center">
-
 
 📧 **truly.isaak@gmail.com**
 
