@@ -28,7 +28,6 @@ Final-year CS Engineering student (Data Science track) shipping AI systems that 
 
 ## ⚡ Flagship Work
 
-
 ### 🤖 Freelancer AI & Software Engineering
 *Self-Employed — Nov 2023 to Present*
 
@@ -47,28 +46,18 @@ Two years, ten-plus shipped projects, one recurring theme: clients come with a b
 *Université Saad Dahlab de Blida 1 — May 2026 to Present*
 
 Deep RL for Ride-Hailing Surge Pricing
+> Extended Lei & Ukkusuri (2023) to optimize continuous surge pricing across **242 NYC zones** (1,365 vehicles) using **TD3, SAC, and PPO**, guided by **Dr. Zengxiang Lei (Purdue)**.
 
-> Started from a real paper — *"Scalable RL Approaches for Dynamic Pricing in Ride-Hailing Systems"* (Lei & Ukkusuri, 2023) — and built past it.
-
-The setup: **242 NYC zones**, **1,365 simulated vehicles**, a continuous action space, three competing RL algorithms benchmarked against each other (TD3, SAC, PPO).
-
-**What actually moved the needle:**
-
-| Metric | Result |
-|---|---|
-| 💰 Weekly profit achieved | **$240,949** across 5 independent runs |
-| 📈 Improvement over published baseline | **~18% above** |
-| 🌦️ Profit lift from weather-aware features alone | **+$71,024 (+41.8%)** |
-| 🚖 Simulated passengers served weekly | **~576,805** |
-
-Then it got a real-time monitoring dashboard on top — Kafka, Go, WebSockets, React, Mapbox GL — because a model nobody can *see* working isn't finished. Built under guidance from **Dr. Zengxiang Lei (Purdue University)**.
+- 💰 **Weekly Profit:** **$240,949** (~18% above published baseline across 5 runs).
+- 🌦️ **Weather Lift:** **+$71,024 (+41.8%)** profit increase over non-weather configurations.
+- ⚡ **Telemetry Dashboard:** Real-time fare streaming built with Go, Kafka, WebSockets, React & Mapbox GL.
 
 `Python` `Go` `WebSocket` `Kafka` `TD3` `SAC` `PPO` `React` `Mapbox GL`
 
 ---
 
 
-## 🛠️ Other Selected Projects
+# 🛠️ Some Selected Projects
 
 ### 🤖 Multilingual WhatsApp Commerce Automation Platform
 
