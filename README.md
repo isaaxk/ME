@@ -102,7 +102,7 @@ Two years, ten-plus shipped projects, one recurring theme: clients come with a b
 
 ---
 
-### 💡 AutoLed Blida — Bilingual Automotive E-Commerce & Booking Platform
+### 💡 AutoLed — Bilingual Automotive E-Commerce & Booking Platform
 
 > A full-stack bilingual platform for a real automotive lighting business, combining a product storefront, appointment booking, and a complete no-code operations back-office. The engineering challenge is breadth under real business constraints: true RTL/LTR bilingual support down to typography, nationwide delivery-cost logic, and an admin system flexible enough for a non-technical shop owner to run day-to-day.
 
