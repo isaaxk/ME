@@ -76,7 +76,7 @@ Deep RL for Ride-Hailing Surge Pricing
 
 ---
 
-### 🪒 Unified Multi-Vertical Booking & Scheduling Engine
+### ⏱️ Unified Multi-Vertical Booking & Scheduling Engine
 
 > A booking platform exploring how a single scheduling engine can serve fundamentally different business models — staff-based (appointments) and pool-based (shared-resource) capacity — without either leaking assumptions into the other's data model.
 
