@@ -13,6 +13,9 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/ishak-boudaoud-8729ba251)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:truly.isaak@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/isaaxk)
+[![Location](https://img.shields.io/badge/Blida%2C%20Algeria-24292F?style=flat-square&logo=googlemaps&logoColor=white)](#)
+[![Views](https://komarev.com/ghpvc/?username=isaaxk&style=flat-square&color=00D2FF&label=PROFILE+VIEWS)](https://github.com/isaaxk)
 
 </div>
 
@@ -58,11 +61,7 @@ I focus on problems where standard off-the-shelf tools fall short:
 | **Fault Tolerance** | Session persistence under connection drops | Implemented crash-safe state checkpointing with **SQLite WAL mode** and session-token resumption, eliminating game or transaction loss on drops. |
 | **Mixed-Dialect NLP** | Intent detection with zero training corpora | Built a dialect-resilient RAG/NLP pipeline specifically tuned for mixed **Algerian Darija, Arabic, French, and English** code-switching. |
 
----
 
-### 🛠️ Tech Stack & Toolchain
-
-Languages :: Python, Go, TypeScript, JavaScript, SQL, C AI / ML :: PyTorch, TensorFlow, Scikit-learn, LangChain, Gymnasium, Vector DBs (Chroma/Pinecone) RL Algorithms :: TD3, SAC, PPO, DQN, Continuous Action Policies Backend & APIs :: FastAPI, Go, Node.js, Express.js, REST APIs, WebSockets, Socket.io Databases :: PostgreSQL (GiST Constraints), Supabase, Redis, SQLite (WAL mode), MongoDB Frontend & Viz :: React 19, Next.js, TailwindCSS, Vite, Mapbox GL, deck.gl Infra & Systems :: Docker, Linux, Git, Apache Kafka, Prometheus, Grafana, CI/CD
 
 <div align="center">
   <img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,sklearn,fastapi,go,ts,react,nextjs,nodejs,postgres,supabase,redis,sqlite,kafka,docker,linux,git,prometheus,grafana&theme=dark" height="38"/>
@@ -72,10 +71,6 @@ Languages :: Python, Go, TypeScript, JavaScript, SQL, C AI / ML :: PyTorch, Tens
 
 ### 🚀 Selected Projects
 
-#### 🚕 [Dynamic Price Optimization — Deep RL for Ride-Hailing](https://github.com/isaaxk/ME)
-End-to-end continuous surge pricing system benchmarking **TD3, SAC, and PPO** across 242 NYC zones. Features weather-aware observation spaces (+\$71K profit lift), an ultra-low latency **Go + WebSocket** fare streaming engine, and an interactive **React + Mapbox GL** demand heatmap.
-> `Python` `Go` `Kafka` `WebSockets` `TD3` `SAC` `PPO` `React` `Mapbox GL` `Docker`
-
 #### 🤖 [Multilingual AI Agent Platform & WhatsApp Commerce Engine](https://github.com/isaaxk/ME)
 Enterprise microservices system providing automated conversational commerce over WhatsApp. Built to handle real-world **Algerian Darija, Arabic, French, and English** code-switching via a custom RAG/NLP pipeline, stateful tool-calling agents, and real-time webhook synchronization.
 > `Python (FastAPI)` `Next.js` `PostgreSQL` `Redis` `LangChain` `Vector DBs` `Docker` `WhatsApp API`
@@ -84,11 +79,29 @@ Enterprise microservices system providing automated conversational commerce over
 Unified scheduling platform abstracting both appointment-based (1-on-1 staff) and pool-based (shared inventory) capacity models on a single engine. Enforces race-condition-free reservations via **PostgreSQL GiST time-range constraints**, self-hosted WhatsApp notifications (Baileys), and automated waitlist recycling.
 > `React 19` `TypeScript` `Supabase` `PostgreSQL` `Edge Functions` `Deno` `Node.js` `Baileys` `TailwindCSS`
 
-#### 🎲 [Server-Authoritative Real-Time Game Engines](https://github.com/isaaxk/ME)
-Suite of multiplayer web games designed with strict zero-trust client architectures. Includes **Domino Table** (continuous 2D collision geometry, generalized double-6 to double-9 rules), **Texas Hold'em Poker** (complete 7-card hand evaluator, side-pot resolution), and **Bottle Race** (sub-second synchronized multi-client starts).
-> `TypeScript` `Node.js` `Socket.io` `WebSockets` `React` `SQLite (WAL)` `TailwindCSS`
+#### 🎲 Real-Time Server-Authoritative Game Engines
+Suite of competitive multiplayer web games designed with strict zero-trust client architectures, low-latency networking, and persistent fault tolerance:
 
----
+- 🀱 **[all-five-domino](https://github.com/isaaxk/all-five-domino)** — Physical-freedom multiplayer dominoes with a 2D continuous placement geometry validator (free angles, non-grid), generalized sets from double-6 to double-9 ($>4$ players), zero-leak socket transport isolation, and SQLite (WAL) crash-safe checkpoints.  
+  `TypeScript` `React 19` `Node.js` `Socket.io` `SQLite` `TailwindCSS`
+
+- ♠️ **[Royal-Flush](https://github.com/isaaxk/Royal-Flush)** — Fully server-authoritative Texas Hold'em poker engine featuring a full 7-card hand evaluator for all 10 rankings (handling wheel straight & kicker edge cases), combinatorial side-pot resolution for uneven all-ins, and session-based mid-hand reconnection.  
+  `Node.js` `Express` `Socket.io` `JavaScript`
+
+- 🍾 **[bottles-n-puzzles](https://github.com/isaaxk/bottles-n-puzzles)** — Synchronized real-time multiplayer party game with sub-second synchronized room starts across varying client network jitter, live drift-free progress streaming, and deterministic tiebreak ranking engines.  
+  `Node.js` `WebSockets` `JavaScript`
+
+- 🕵️ **[undercover-1.7](https://github.com/isaaxk/undercover-1.7)** — Re-engineered secret-role party game with hidden-role state machines, non-repetitive categorized word banks, and custom voting/elimination logic.  
+  `HTML/CSS` `JavaScript`
+
+#### 🚕 [Dynamic Price Optimization — Deep RL for Ride-Hailing](https://github.com/isaaxk/ME)
+End-to-end continuous surge pricing system benchmarking **TD3, SAC, and PPO** across 242 NYC zones. Features weather-aware observation spaces (+\$71K profit lift), an ultra-low latency **Go + WebSocket** fare streaming engine, and an interactive **React + Mapbox GL** demand heatmap.
+> `Python` `Go` `Kafka` `WebSockets` `TD3` `SAC` `PPO` `React` `Mapbox GL` `Docker`
+
+#### 🛍️ [Big Market (El-Bazar) — Modular E-Commerce Platform](https://github.com/isaaxk/Big-market-frnt)
+Framework-less e-commerce platform built from first principles with modular vanilla JavaScript. Features dynamic catalog rendering, persistent local cart state, multi-step checkout/payment handling, and a complete administrative product-management dashboard.
+> `JavaScript (ES Modules)` `HTML5` `CSS3` `Vite`
+
 
 ### 🤝 Get in Touch
 
@@ -96,3 +109,4 @@ I'm open to challenging opportunities in **AI Engineering, Reinforcement Learnin
 
 - ✉️ **Email:** [truly.isaak@gmail.com](mailto:truly.isaak@gmail.com)
 - 💼 **LinkedIn:** [linkedin.com/in/ishak-boudaoud-8729ba251](https://www.linkedin.com/in/ishak-boudaoud-8729ba251)
+---
