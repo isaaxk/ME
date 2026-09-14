@@ -22,9 +22,7 @@
 
 ## 🧭 The Short Version
 
-Final-year Computer Science Engineering student (Data Science track) who's spent the last two years doing the thing most people only theorize about: **shipping AI systems that touch real users and real money.** Ten-plus freelance projects, one deep RL research system beating a published academic baseline by 18%, and a habit of ending up as the person who owns the pipeline end-to-end — data, model, backend, deployment.
-
-I like problems that don't have a clean textbook answer. Surge pricing across 242 competing zones. Four-language intent detection with almost no NLP tooling built for the combination. That's the fun part.
+Final-year CS Engineering student (Data Science track) shipping AI systems that solve real problems for real businesses, and a habit of owning the full pipeline from data to deployment. I go looking for problems without a clean textbook answer: reinforcement learning agents competing across hundreds of zones, language models that have to understand a mix no off-the-shelf tool was built for — that's exactly where I want to be.
 
 ---
 
