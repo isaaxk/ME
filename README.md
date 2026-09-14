@@ -4,7 +4,7 @@
 
 ## AI & Software Engineer · Data Scientist
 
- ***Open to interesting problems — especially the ones that don't fit in a textbook.***
+ ### ***Open to interesting problems — especially the ones that don't fit in a textbook.***
 
 📍 Blida, Algeria · ✉️ truly.isaak@gmail.com · ☎️ +213 552 738 007
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/ishak-boudaoud-8729ba251)
