@@ -131,17 +131,6 @@ Final-year Computer Science Engineering student (**Data Science track**) at *Uni
 
 ## 🌟 &nbsp;Featured Systems
 
-### 🚕 [Dynamic Price Optimization — RL for Ride-Hailing Surge Pricing](https://github.com/isaaxk/ME)
-> *Continuous-action reinforcement learning system optimizing surge price multipliers across 242 NYC zones with weather-aware intelligence.*
-
-- 📈 **Empirical Benchmark:** Trained & benchmarked continuous-action agents (**TD3**, **SAC**, **PPO**) in an environment simulating 1,365 vehicles and ~576,805 weekly passengers.
-- 🌦️ **Weather Sensitivity:** Weather-aware state integration provided a **+\$71,024 (+41.8%)** profit lift over non-weather configurations.
-- 💰 **Key Result:** Achieved **\$240,949 weekly profit** across 5 independent seeds — **~18% higher** than the baseline in Lei & Ukkusuri (2023) (guided by Dr. Zengxiang Lei, Purdue University).
-- ⚡ **Observability:** Low-latency telemetry backend using **Go + WebSockets + Kafka**, visualised on a **React + deck.gl / Mapbox GL** demand heatmap.
-
-`Python` `Go` `Kafka` `WebSockets` `TD3` `SAC` `PPO` `React` `Mapbox GL` `Prometheus` `Grafana` `Docker`
-
----
 
 ### 🤖 [Multilingual AI Agent Platform & WhatsApp Commerce Engine](https://github.com/isaaxk/ME)
 > *Microservices platform for automated conversational commerce over WhatsApp in mixed-dialect, code-switched environments.*
@@ -173,6 +162,18 @@ Final-year Computer Science Engineering student (**Data Science track**) at *Uni
 - 🛡️ **Security & Persistence:** Zero-leak socket transport mask (opponent hands/cards are never transmitted to unauthorized sockets); SQLite WAL crash-safe checkpoints with seamless mid-hand reconnection.
 
 `TypeScript` `Node.js` `Socket.io` `WebSockets` `React` `SQLite (WAL)` `TailwindCSS`
+
+---
+
+### 🚕 [Dynamic Price Optimization — RL for Ride-Hailing Surge Pricing](https://github.com/isaaxk/ME)
+> *Continuous-action reinforcement learning system optimizing surge price multipliers across 242 NYC zones with weather-aware intelligence.*
+
+- 📈 **Empirical Benchmark:** Trained & benchmarked continuous-action agents (**TD3**, **SAC**, **PPO**) in an environment simulating 1,365 vehicles and ~576,805 weekly passengers.
+- 🌦️ **Weather Sensitivity:** Weather-aware state integration provided a **+\$71,024 (+41.8%)** profit lift over non-weather configurations.
+- 💰 **Key Result:** Achieved **\$240,949 weekly profit** across 5 independent seeds — **~18% higher** than the baseline in Lei & Ukkusuri (2023) (guided by Dr. Zengxiang Lei, Purdue University).
+- ⚡ **Observability:** Low-latency telemetry backend using **Go + WebSockets + Kafka**, visualised on a **React + deck.gl / Mapbox GL** demand heatmap.
+
+`Python` `Go` `Kafka` `WebSockets` `TD3` `SAC` `PPO` `React` `Mapbox GL` `Prometheus` `Grafana` `Docker`
 
 <div align="center">
 <img src="https://raw.githubusercontent.com/trinib/trinib/82213791fa9ff58d3ca768ddd6de2489ec23ffca/images/footer.svg" width="100%"/>
