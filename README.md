@@ -13,9 +13,6 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/ishak-boudaoud-8729ba251)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:truly.isaak@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/isaaxk)
-[![Location](https://img.shields.io/badge/Blida%2C%20Algeria-24292F?style=flat-square&logo=googlemaps&logoColor=white)](#)
-[![Views](https://komarev.com/ghpvc/?username=isaaxk&style=flat-square&color=00D2FF&label=PROFILE+VIEWS)](https://github.com/isaaxk)
 
 </div>
 
